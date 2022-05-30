@@ -31,3 +31,13 @@
     float: right;
     text-align: right;
 }
+#musica{
+ 
+    margin: 3px;
+}
+#thumb{
+    padding: 10px;
+}
+#info{
+    text-align: center;
+}

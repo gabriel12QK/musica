@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
     ({   
        next:(s)=>{
          this.mus=s.data;
-       /*this.alb=this.mus.filter((_alb: any) => 
+       this.alb=this.mus.filter((_alb: any) => 
        { for (var ib = 0; ib <= this.mus.length; ib++) 
         {
         for (var j = 0; j < this.mus.length - 1; j++) 
@@ -36,7 +36,7 @@ export class AboutComponent implements OnInit {
           } 
         }
         }
-       } )*/
+       } )
        console.log(this.alb)
        },
        error:(_e)=>{
@@ -55,11 +55,11 @@ export class AboutComponent implements OnInit {
        error:(_e)=>{
        debugger
        }
-    })*/
+    })
   
-  }
+  }*/
 
-  
+} 
   
   
 
