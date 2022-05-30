@@ -1,0 +1,38 @@
+<div class="about_area">
+<form class="busqueda">
+        <input  type="text" placeholder="Search" #buscar aria-label="Search" class="txtsearch">
+        <button  type="button" class="search" (click)="getmusic(buscar)"> Search </button>
+    </form>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-5 col-md-6">
+                <div class="about_thumb">
+                    <img class="img-fluid" src="assets/img/about/about_1.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-7 col-md-6">
+                <div class="about_info" >
+                    <h3></h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily or picture placing drawing. Apartments frequently or motionless on reasonable projecting expression enim ad minim veniam quis nostrud exercitation we have supported programmes to help alleviate human suffering through animal welfare when people might depend.</p>
+
+                </div>
+            </div>
+            <div></div>
+            <div *ngFor="let item of mus; " class="col-xl-12 col-md-6" id="conten">
+                
+                <div class="albums">
+                  <h1> {{item.album.title}} </h1>
+                  <span> {{item.album.id}} </span>
+                  
+                  <button  type="button" class="search"  > Search </button>
+                </div>
+                <div class="cover">
+                    <img src="{{item.album.cover}}" alt="" >
+                  
+                </div>
+            </div >
+          
+        </div >
+        
+    </div>
+</div>
